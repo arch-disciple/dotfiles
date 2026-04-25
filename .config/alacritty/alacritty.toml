@@ -1,0 +1,28 @@
+
+[env]
+TERM = "alacritty"
+
+[window]
+opacity = 0.9
+decorations = "none"
+dynamic_title = true
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 120
+lines = 30
+
+[window.padding]
+x = 12
+y = 12
+
+[terminal.shell]
+program = "/usr/bin/fish"
+args = ["--interactive"]
+
+[general]
+import = [
+  "~/.config/alacritty/fonts.toml",
+  "~/.config/alacritty/theme.toml",
+  "~/.config/alacritty/keybinds.toml"
+]

@@ -1,0 +1,22 @@
+[mouse]
+bindings = [
+{ mouse = "Right", mods = "Control", action = "Paste" },
+]
+
+[keyboard]
+bindings = [
+  # Create new window with Ctrl+Shift+n
+  { key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+
+  # Spawn a new instance with Ctrl+Shift+Enter
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+
+  # Quit alacritty with Ctrl+Shift+q
+  { key = "Q", mods = "Control|Shift", action = "Quit"},
+
+  # Copy with Ctrl+Shift+c
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+
+  # Paste with Ctrl+Shift+v
+  { key = "V", mods = "Control|Shift", action = "Paste" }
+]
