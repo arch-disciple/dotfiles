@@ -1,0 +1,48 @@
+// █▀█ █ █ █▀▀ █▀▄ █ █ █ █▀▀ █ ▄ █
+// █▄█ ▀▄▀ ██▄ █▀▄ ▀▄▀ █ ██▄ ▀▄▀▄▀
+
+overview {
+
+    zoom 0.45
+
+    workspace-shadow {
+        // off
+        softness 48
+        spread 16
+        offset x=0 y=0
+        color "#2a2a2a50"
+    }
+
+}
+
+recent-windows {
+    // off
+    debounce-ms 750
+
+    open-delay-ms 150
+
+    highlight {
+        active-color "rgb(101, 101, 101)"
+        urgent-color "#ff9999ff"
+
+        padding 30
+        corner-radius 24
+    }
+
+    previews {
+        max-height 480
+        max-scale 0.25
+    }
+
+    binds {
+        Alt+Tab         { next-window; }
+        Alt+Shift+Tab   { previous-window; }
+        Alt+grave       { next-window     filter="app-id"; }
+        Alt+Shift+grave { previous-window filter="app-id"; }
+
+        Mod+Tab         { next-window; }
+        Mod+Shift+Tab   { previous-window; }
+        Mod+grave       { next-window     filter="app-id"; }
+        Mod+Shift+grave { previous-window filter="app-id"; }
+    }
+}

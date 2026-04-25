@@ -1,0 +1,84 @@
+// █ █ █ █ █▄ █ █▀▄ █▀█ █ █ █    █▀▄ █ █ █   █▀▀ █▀
+// ▀▄▀▄▀ █ █ ▀█ █▄▀ █▄█ ▀▄▀▄▀    █▀▄ █▄█ █▄▄ ██▄ ▄█
+
+// Window rules let you adjust behavior for individual windows.
+
+// Enable rounded corners for all windows.
+window-rule {
+    geometry-corner-radius 16
+    clip-to-geometry true
+}
+
+// Inactive windows are translucent
+window-rule {
+    match is-active=false
+    opacity 0.75
+}
+
+// Open Brave as maximized column
+window-rule {
+    match app-id="brave-browser"
+    default-column-width { proportion 1.0; }
+}
+
+// Open VS Codium as maximized column
+window-rule {
+    match app-id="codium"
+    default-column-width { proportion 1.0; }
+}
+
+// Open zed editor as maximized column
+window-rule {
+    match app-id="dev.zed.Zed"
+    default-column-width { proportion 1.0; }
+}
+
+// Open zathura pdf as maximized column
+window-rule {
+    match app-id="org.pwmt.zathura"
+    default-column-width { proportion 1.0; }
+}
+
+// Foot terminal size
+window-rule {
+    match app-id="foot"
+    default-column-width { proportion 0.75; }
+    opacity 0.9
+}
+
+// Ghostty size
+window-rule {
+    match app-id="com.mitchellh.ghostty"
+    default-column-width { proportion 0.75; }
+    opacity 0.9
+}
+
+// Floating file manager
+window-rule {
+    match app-id="org.gnome.Nautilus"
+    open-floating true
+
+    default-column-width { proportion 0.5;}
+    default-window-height { proportion 0.55;}
+}
+
+// Open the Brave picture-in-picture player as floating by default.
+window-rule {
+    match app-id="" title="^Picture in picture$"
+
+    open-floating true
+
+    default-column-width { fixed 480; }
+    default-window-height { fixed 270; }
+
+    default-floating-position x=96 y=64 relative-to="bottom-right"
+}
+
+// █   ▄▀█ █ █ █▀▀ █▀▄   █▀▄ █ █ █   █▀▀ █▀
+// █▄▄ █▀█  █  ██▄ █▀▄   █▀▄ █▄█ █▄▄ ██▄ ▄█
+
+// Set the overview wallpaper on the backdrop.
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
+}
