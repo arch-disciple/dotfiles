@@ -3,10 +3,24 @@
 
 // Window rules let you adjust behavior for individual windows.
 
-// Enable rounded corners for all windows.
+// Enable rounded corners and non-xray blur for all windows.
 window-rule {
     geometry-corner-radius 16
     clip-to-geometry true
+
+    opacity 0.9
+
+    background-effect {
+      blur true
+      xray false
+    }
+}
+
+blur {
+   passes 2        // more passes = stronger blur (default: 3)
+   offset 4.0      // sample distance per pass (default: 3.0)
+   noise 0.01      // grain overlay (default: 0.02)
+   saturation 1.50 // color saturation boost (default: 1.5)
 }
 
 // Inactive windows are translucent
@@ -81,4 +95,11 @@ window-rule {
 layer-rule {
   match namespace="^noctalia-overview*"
   place-within-backdrop true
+}
+
+layer-rule {
+  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  background-effect {
+    xray false
+  }
 }
