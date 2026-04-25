@@ -1,0 +1,5 @@
+include kanagawa
+
+set font "Montserrat 16"
+
+set statusbar-font "FiraCode 12"

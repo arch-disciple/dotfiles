@@ -1,0 +1,39 @@
+# Kanagawa Zathura Theme (Wave Palette)
+
+set default-fg                rgba(220,215,186,1)   # Fuji White
+set default-bg                rgba(31,31,40,1)      # Sumi Ink 1
+
+set completion-bg             rgba(42,42,55,1)      # Sumi Ink 3
+set completion-fg             rgba(126,156,216,1)   # Crystal Blue
+set completion-highlight-bg   rgba(34,50,73,1)      # Wave Blue 2
+set completion-highlight-fg   rgba(220,215,186,1)   # Fuji White
+set completion-group-bg       rgba(22,22,29,1)      # Sumi Ink 0
+set completion-group-fg       rgba(84,84,109,1)     # Fuji Gray
+
+set statusbar-fg              rgba(220,215,186,1)   # Fuji White
+set statusbar-bg              rgba(22,22,29,1)      # Sumi Ink 0
+set inputbar-fg               rgba(230,195,132,1)   # Autumn Yellow
+set inputbar-bg               rgba(31,31,40,1)      # Sumi Ink 1
+
+set notification-bg           rgba(31,31,40,1)      # Sumi Ink 1
+set notification-fg           rgba(220,215,186,1)   # Fuji White
+set notification-error-bg     rgba(31,31,40,1)      # Sumi Ink 1
+set notification-error-fg     rgba(195,64,67,1)     # Autumn Red
+set notification-warning-bg   rgba(31,31,40,1)      # Sumi Ink 1
+set notification-warning-fg   rgba(255,158,59,1)    # Ronin Yellow
+
+set recolor                   "true"
+set recolor-lightcolor        rgba(31,31,40,1)      # Sumi Ink 1 (Page Background)
+set recolor-darkcolor         rgba(220,215,186,1)   # Fuji White (Text)
+
+set index-fg                  rgba(220,215,186,1)   # Fuji White
+set index-bg                  rgba(31,31,40,1)      # Sumi Ink 1
+set index-active-fg           rgba(31,31,40,1)      # Sumi Ink 1
+set index-active-bg           rgba(126,156,216,1)   # Crystal Blue
+
+set render-loading-bg         rgba(31,31,40,1)      # Sumi Ink 1
+set render-loading-fg         rgba(220,215,186,1)   # Fuji White
+
+set highlight-color           rgba(45,79,103,0.3)   # Wave Blue 1
+set highlight-fg              rgba(220,215,186,1)   # Fuji White
+set highlight-active-color    rgba(149,127,184,0.3) # Oni Violet
