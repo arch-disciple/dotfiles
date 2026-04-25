@@ -1,0 +1,96 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "source": "Arch",
+    "color": {
+      "1": "red",
+      "2": "blue"
+    },
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 4
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "separator": "38;2;95;135;135"
+    }
+  },
+  "modules": [
+    "break",
+    {
+      "type": "title",
+      "color": {
+        "user": "38;2;95;135;135",
+        "at": "white",
+        "host": "green"
+      }
+    },
+    {
+      "type": "custom",
+      "format": "┌─────────────────────────────────────────────────┐",
+      "outputColor": "38;2;95;135;135"
+    },
+    "break",
+    {
+      "type": "os",
+      "key": " ╭─ ",
+      "keyColor": "38;2;0;215;135"
+    },
+    {
+      "type": "kernel",
+      "key": " ├─ ",
+      "keyColor": "38;2;0;215;135"
+    },
+    {
+      "type": "packages",
+      "key": " ╰─ 󰏗",
+      "keyColor": "38;2;0;215;135"
+    },
+    "break",
+    // {
+    //   "type": "de",
+    //   "key": " ╭─ ",
+    //   "keyColor": "38;2;224;107;116"
+    // },
+    {
+      "type": "terminal",
+      "key": " ╭─ ",
+      "keyColor": "38;2;224;107;116"
+    },
+    {
+      "type": "shell",
+      "key": " ╰─ ",
+      "keyColor": "38;2;224;107;116"
+    },
+    "break",
+    {
+      "type": "host",
+      "key": " ╭─ ",
+      "keyColor": "38;2;95;135;255"
+    },
+    {
+      "type": "cpu",
+      "key": " ├─ 󰍛",
+      "keyColor": "38;2;95;135;255"
+    },
+    {
+      "type": "memory",
+      "key": " ╰─ ",
+      "keyColor": "38;2;95;135;255"
+    },
+    "break",
+    {
+      "type": "uptime",
+      "key": "  󰄉",
+      "keyColor": "38;2;0;175;95"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────────────┘"
+    }
+  ]
+}
